@@ -1,15 +1,14 @@
 package com.alkemy.icons.icons.entity;
 
+import javax.persistence.*;
+
 import lombok.Getter;
 import lombok.Setter;
-
-import javax.persistence.*;
 
 @Entity
 @Table(name = "continente")
 @Getter
 @Setter
-
 public class ContinenteEntity {
 
 	@Id
@@ -19,4 +18,6 @@ public class ContinenteEntity {
 	private String imagen;
 	
 	private String denominacion;
+
+
 }

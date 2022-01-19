@@ -1,16 +1,14 @@
 package com.alkemy.icons.icons.service;
 
-import org.springframework.stereotype.Service;
+import java.util.List;
 
 import com.alkemy.icons.icons.dto.ContinenteDTO;
+import com.alkemy.icons.icons.entity.ContinenteEntity;
 
+public interface ContinenteService {
 
-@Service
-public class ContinenteService {
-
-	public ContinenteDTO save(ContinenteDTO dto) {
-		//guardar
-		System.out.println("guardar continente");
-		return dto;
-	}
+	
+	ContinenteDTO save(ContinenteDTO dto);
+	
+	List<ContinenteDTO> getAllContinentes();
 }
